@@ -1,0 +1,13 @@
+{
+    "name": "xtemplate-on-browser",
+    "author": "yiminghe <yiminghe@gmail.com>",
+    "license": "MIT",
+    "repository": {
+        "type": "git",
+        "url": "http://github.com/yiminghe/xtemplate-on-browser.git"
+    },
+    "dependencies": {
+        "modulex": "modulex#master",
+        "xtemplate": "xtemplate#1.2.2"
+    }
+}

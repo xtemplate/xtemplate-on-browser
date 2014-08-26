@@ -1,0 +1,10 @@
+{
+  "name": "xtemplate-on-browser",
+  "author": "yiminghe <yiminghe@gmail.com>",
+  "dependencies": {},
+  "devDependencies": {
+    "gulp": "^3.8.7",
+    "gulp-xtemplate": "^1.0.0",
+    "xtemplate": "1.2.2"
+  }
+}
