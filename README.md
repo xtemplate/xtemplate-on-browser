@@ -2,6 +2,10 @@
 
 use xtemplate on browser
 
+## doc
+
+https://github.com/kissyteam/xtemplate/blob/master/docs/use-on-browser.md
+
 ## prepare environment
 
 ```

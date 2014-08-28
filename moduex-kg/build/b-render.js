@@ -1,4 +1,4 @@
-KISSY.add(function(S,require,exports,module){
+modulex.add(function(require,exports,module){
 var tpl = require("./b");
 var XTemplateRuntime = require("kg/xtemplate/1.2.4/runtime");
 var instance = new XTemplateRuntime(tpl);

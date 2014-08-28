@@ -1,6 +1,7 @@
-<script src="//g.alicdn.com/kissy/edge/2014.08.26/seed-debug.js"></script>
+<!--<script src="//g.assets.daily.taobao.net/kissy/k/1.4.8/seed.js"></script>-->
+<script src="//g.alicdn.com/kissy/k/1.4.8/seed.js"></script>
 <script>
-    modulex.config({
+    KISSY.config({
         packages: {
             xtpl: {
                 base: './build',
@@ -8,7 +9,7 @@
             }
         }
     });
-    modulex.use('xtpl/a-render', function (aRender) {
+    KISSY.use('xtpl/a-render', function (S, aRender) {
         console.log(aRender({
             x: 1,
             y: 2

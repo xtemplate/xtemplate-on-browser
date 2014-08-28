@@ -1,4 +1,4 @@
-modulex.add(function(require,exports,module){
+KISSY.add(function(S,require,exports,module){
 module.exports = function b(scope,buffer,undefined){
 var tpl = this;var pos = tpl.pos = {line:1, col:1};
 var nativeCommands = tpl.root.nativeCommands;

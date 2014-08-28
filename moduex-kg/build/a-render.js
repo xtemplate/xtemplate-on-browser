@@ -1,5 +1,5 @@
-KISSY.add(function(S,require,exports,module){
-var tpl = require("./b");
+modulex.add(function(require,exports,module){
+var tpl = require("./a");
 var XTemplateRuntime = require("kg/xtemplate/1.2.4/runtime");
 var instance = new XTemplateRuntime(tpl);
 return function(){

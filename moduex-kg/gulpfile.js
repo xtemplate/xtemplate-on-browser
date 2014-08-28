@@ -3,7 +3,6 @@ var gulp = require('gulp');
 var xtemplate = require('xtemplate');
 gulp.task('default', function () {
     gulp.src('xtpl/**/*').pipe(gulpXTemplate({
-        XTemplate: xtemplate,
-        wrap:'kissy'
+        XTemplate: xtemplate
     })).pipe(gulp.dest('build'))
 });
