@@ -22,10 +22,13 @@ gulp
 
 open  ./standalone/demo.html
 
+## use xtemplate with requirejs loader
 
-## use xtemplate with module mode
+open ./requirejs/demo.html
 
-open ./module/demo.html
+## use xtemplate with modulex loader
+
+open ./modulex/demo.html
 
 ## use xtemplate with kissy gallery
 

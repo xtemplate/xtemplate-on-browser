@@ -4,6 +4,6 @@ var xtemplate = require('xtemplate');
 gulp.task('default', function () {
     gulp.src('xtpl/**/*').pipe(gulpXTemplate({
         XTemplate: xtemplate,
-        useGallery: false
+        runtime: 'xtemplate/runtime'
     })).pipe(gulp.dest('build'))
 });

@@ -1,0 +1,27 @@
+<script src="//cdnjs.cloudflare.com/ajax/libs/require.js/2.1.14/require.js"></script>
+<script>
+    var modulex = {
+        add: function (name, deps, fn) {
+            if (arguments.length === 3) {
+                deps.unshift.apply(deps, ['require', 'exports', 'module']);
+                define(name, deps, fn);
+            } else {
+                define(name, deps, fn);
+            }
+        }
+    };
+    require.config({
+        paths: {
+            xtpl: './build',
+            'xtemplate/runtime': '../bower_components/xtemplate/build/xtemplate/runtime-debug'
+        }
+    });
+    require(['xtpl/a-render'], function (aRender) {
+       aRender({
+            x: 1,
+            y: 2
+        },function(err,content){
+            console.log(content);
+        });
+    });
+</script>

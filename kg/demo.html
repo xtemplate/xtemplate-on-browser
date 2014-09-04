@@ -10,9 +10,11 @@
         }
     });
     KISSY.use('xtpl/a-render', function (S, aRender) {
-        console.log(aRender({
+        aRender({
             x: 1,
             y: 2
-        }));
+        },function(err,content){
+            console.log(content);
+        });
     });
 </script>
