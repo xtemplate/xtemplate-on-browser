@@ -4,6 +4,6 @@
   "devDependencies": {
     "gulp": "^3.8.7",
     "gulp-xtemplate": "^1.0.0",
-    "xtemplate": "1.2.4"
+    "xtemplate": "1.3.0"
   }
 }

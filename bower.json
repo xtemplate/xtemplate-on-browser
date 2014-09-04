@@ -8,6 +8,6 @@
     },
     "dependencies": {
         "modulex": "modulex#master",
-        "xtemplate": "xtemplate#1.2.4"
+        "xtemplate": "xtemplate#1.3.0"
     }
 }
