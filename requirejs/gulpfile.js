@@ -5,6 +5,7 @@ gulp.task('default', function () {
     gulp.src('xtpl/**/*').pipe(gulpXTemplate({
         XTemplate: xtemplate,
         wrap: 'define',
+        truncatePrefixLen:process.cwd().length,
         runtime: 'xtemplate/runtime'
     })).pipe(gulp.dest('build'))
 });
