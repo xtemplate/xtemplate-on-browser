@@ -1,13 +1,13 @@
 define(function(require,exports,module){
-module.exports = function b(scope,buffer){
-function run(tpl) {
+module.exports = function b(scope,buffer,tpl,undefined){
+var data = scope.data;
+var affix = scope.affix;
 var t;
 var root = tpl.root;
-var directAccess = tpl.directAccess;
-var pos = tpl.pos = {line:1};
+var name = tpl.name;
+var pos = tpl.pos;
 var nativeCommands = root.nativeCommands;
 var utils = root.utils;
-
 var callFnUtil = utils["callFn"];
 var callCommandUtil = utils["callCommand"];
 var rangeCommand = nativeCommands["range"];
@@ -23,23 +23,12 @@ var extendCommand = nativeCommands["extend"];
 var blockCommand = nativeCommands["block"];
 var macroCommand = nativeCommands["macro"];
 var debuggerCommand = nativeCommands["debugger"];
-buffer.append('');
-var id0 = directAccess ? ((t=(scope.affix &&scope.affix.y)) !== undefined?t:scope.data.y) : scope.resolve(["y"]);
-buffer.writeEscaped(id0);
+
+
+buffer.data += '';
+var id0 = ((t=(affix.y)) !== undefined ? t:((t = data.y) !== undefined ? t :scope.resolveUp(["y"])));
+buffer = buffer.writeEscaped(id0);
 return buffer;
-}
-function tryRun(tpl) {
-try {
-return run(tpl);
-} catch(e) {
-if(!e.xtpl){
-e.xtpl = {pos: tpl.pos,name: '\\xtpl\\b.xtpl'};
-buffer.error(e);
-}
-throw e;
-}
-}
-return tryRun(this);
 };
 module.exports.TPL_NAME = module.id || module.name;
 });

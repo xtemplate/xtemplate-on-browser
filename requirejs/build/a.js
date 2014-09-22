@@ -1,13 +1,13 @@
 define(function(require,exports,module){
-module.exports = function a(scope,buffer){
-function run(tpl) {
+module.exports = function a(scope,buffer,tpl,undefined){
+var data = scope.data;
+var affix = scope.affix;
 var t;
 var root = tpl.root;
-var directAccess = tpl.directAccess;
-var pos = tpl.pos = {line:1};
+var name = tpl.name;
+var pos = tpl.pos;
 var nativeCommands = root.nativeCommands;
 var utils = root.utils;
-
 var callFnUtil = utils["callFn"];
 var callCommandUtil = utils["callCommand"];
 var rangeCommand = nativeCommands["range"];
@@ -23,37 +23,16 @@ var extendCommand = nativeCommands["extend"];
 var blockCommand = nativeCommands["block"];
 var macroCommand = nativeCommands["macro"];
 var debuggerCommand = nativeCommands["debugger"];
-buffer.append('');
-var id0 = directAccess ? ((t=(scope.affix &&scope.affix.x)) !== undefined?t:scope.data.x) : scope.resolve(["x"]);
-buffer.writeEscaped(id0);
-buffer.append('');
-var option1 = {escape: 1};
-var params2 = [];
-params2.push('./b');
-option1.params = params2;
-var module3 = require("./b");
-option1.params[0] = module3.TPL_NAME;
-var callRet4
-callRet4 = includeCommand.call(tpl, scope, option1, buffer);
-if(callRet4 && callRet4.isBuffer){
-buffer = callRet4;
-callRet4 = undefined;
-}
-buffer.writeEscaped(callRet4);
+
+
+buffer.data += '';
+var id0 = ((t=(affix.x)) !== undefined ? t:((t = data.x) !== undefined ? t :scope.resolveUp(["x"])));
+buffer = buffer.writeEscaped(id0);
+buffer.data += '';
+var callRet1
+buffer = root.include(scope,{params:[require("./b").TPL_NAME]},buffer,tpl);
+buffer = buffer.writeEscaped(callRet1);
 return buffer;
-}
-function tryRun(tpl) {
-try {
-return run(tpl);
-} catch(e) {
-if(!e.xtpl){
-e.xtpl = {pos: tpl.pos,name: '\\xtpl\\a.xtpl'};
-buffer.error(e);
-}
-throw e;
-}
-}
-return tryRun(this);
 };
 module.exports.TPL_NAME = module.id || module.name;
 });
