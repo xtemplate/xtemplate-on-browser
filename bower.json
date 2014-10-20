@@ -7,7 +7,7 @@
         "url": "http://github.com/yiminghe/xtemplate-on-browser.git"
     },
     "dependencies": {
-        "modulex": "modulex#master",
-        "xtemplate": "xtemplate#3.0.1"
+        "modulex": "*",
+        "xtemplate": "3.3.1"
     }
 }

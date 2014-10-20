@@ -1,8 +1,9 @@
-KISSY.add(function(S,require,exports,module){
+define(function(require,exports,module){
+/*compiled by xtemplate#3.3.1*/
 var tpl = require("./a");
-var XTemplateRuntime = require("kg/xtemplate/3.0.1/runtime");
+var XTemplateRuntime = require("kg/xtemplate/3.3.1/runtime");
 var instance = new XTemplateRuntime(tpl);
-return function(){
+module.exports = function(){
 return instance.render.apply(instance,arguments);
 };
 });

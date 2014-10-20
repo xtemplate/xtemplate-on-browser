@@ -1,11 +1,26 @@
-modulex.add(function(require,exports,module){
-module.exports = function b(scope,buffer,tpl,undefined){
-var data = scope.data;
-var affix = scope.affix;
+define(function(require,exports,module){
+/*compiled by xtemplate#3.3.1*/
+var ret = module.exports = function b(undefined){
 var t;
+var t0;
+var t1;
+var t2;
+var t3;
+var t4;
+var t5;
+var t6;
+var t7;
+var t8;
+var t9;
+var tpl = this;
 var root = tpl.root;
+var buffer = tpl.buffer;
+var scope = tpl.scope;
+var runtime = tpl.runtime;
 var name = tpl.name;
 var pos = tpl.pos;
+var data = scope.data;
+var affix = scope.affix;
 var nativeCommands = root.nativeCommands;
 var utils = root.utils;
 var callFnUtil = utils["callFn"];
@@ -26,9 +41,9 @@ var debuggerCommand = nativeCommands["debugger"];
 
 
 buffer.data += '';
-var id0 = ((t=(affix.y)) !== undefined ? t:((t = data.y) !== undefined ? t :scope.resolveUp(["y"])));
+var id0 = ((t=(affix.y)) !== undefined ? t:((t = data.y) !== undefined ? t :scope.resolveLooseUp(["y"])));
 buffer = buffer.writeEscaped(id0);
 return buffer;
 };
-module.exports.TPL_NAME = module.id || module.name;
+ret.TPL_NAME = module.id || module.name;
 });

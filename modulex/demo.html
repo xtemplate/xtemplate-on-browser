@@ -1,6 +1,6 @@
 <script src="../bower_components/modulex/build/modulex-debug.js"></script>
 <script>
-    modulex.config({
+    require.config({
         packages: {
             xtemplate: {
                 filter: 'debug',
@@ -11,7 +11,7 @@
             }
         }
     });
-    modulex.use('xtpl/a-render', function (aRender) {
+    require('xtpl/a-render', function (aRender) {
         aRender({
             x: 1,
             y: 2

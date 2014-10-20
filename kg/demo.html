@@ -1,14 +1,16 @@
-<script src="//g.alicdn.com/kissy/k/1.4.9/seed.js"></script>
+<script src="//g.alicdn.com/kissy/k/5.0.0/seed.js"></script>
 <script>
-    KISSY.config({
+    require.config({
         packages: {
             xtpl: {
-                base: './build',
-                ignorePackageNameInUri: 1
+                base: './build'
+            },
+            kg: {
+                base: '//g.alicdn.com/kg/'
             }
         }
     });
-    KISSY.use('xtpl/a-render', function (S, aRender) {
+    require(['xtpl/a-render'], function (aRender) {
         aRender({
             x: 1,
             y: 2
