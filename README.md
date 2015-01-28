@@ -4,7 +4,7 @@ use xtemplate on browser
 
 ## doc
 
-https://github.com/kissyteam/xtemplate/blob/master/docs/use-on-browser.md
+https://github.com/xtemplate/xtemplate/blob/master/docs/tutorial/use-on-browser.md
 
 ## prepare environment
 
@@ -12,9 +12,9 @@ https://github.com/kissyteam/xtemplate/blob/master/docs/use-on-browser.md
 npm install bower -g
 npm install
 bower install
-cd module
+cd modulex
 gulp
-cd kissy
+cd requirejs
 gulp
 ```
 
@@ -29,7 +29,3 @@ open ./requirejs/demo.html
 ## use xtemplate with modulex loader
 
 open ./modulex/demo.html
-
-## use xtemplate with kissy gallery
-
-open ./kg/demo.html
