@@ -9,23 +9,22 @@ https://github.com/xtemplate/xtemplate/blob/master/docs/tutorial/use-on-browser.
 ## prepare environment
 
 ```
-npm install bower -g
 npm install
-bower install
-cd modulex
-gulp
-cd requirejs
-gulp
+./build.sh
+npm start
 ```
+## use xtemplate with webpack and standalone runtime
+
+http://localhost:8000/standalone-runtime/demo.html
 
 ## use xtemplate with standalone mode
 
-open  ./standalone/demo.html
+http://localhost:8000/standalone/demo.html
 
 ## use xtemplate with requirejs loader
 
-open ./requirejs/demo.html
+http://localhost:8000/requirejs/demo.html
 
 ## use xtemplate with modulex loader
 
-open ./modulex/demo.html
+http://localhost:8000/modulex/demo.html

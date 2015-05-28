@@ -6,5 +6,5 @@ cd modulex
 gulp
 
 cd ..
-cd kg
+cd standalone-runtime
 gulp

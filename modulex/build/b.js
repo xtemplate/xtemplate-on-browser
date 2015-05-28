@@ -1,5 +1,5 @@
 define(function(require,exports,module){
-/*compiled by xtemplate#3.3.1*/
+/*compiled by xtemplate#*/
 var ret = module.exports = function b(undefined){
 var t;
 var t0;
@@ -24,8 +24,10 @@ var affix = scope.affix;
 var nativeCommands = root.nativeCommands;
 var utils = root.utils;
 var callFnUtil = utils["callFn"];
+var callDataFnUtil = utils["callDataFn"];
 var callCommandUtil = utils["callCommand"];
 var rangeCommand = nativeCommands["range"];
+var voidCommand = nativeCommands["void"];
 var foreachCommand = nativeCommands["foreach"];
 var forinCommand = nativeCommands["forin"];
 var eachCommand = nativeCommands["each"];
@@ -41,7 +43,7 @@ var debuggerCommand = nativeCommands["debugger"];
 
 
 buffer.data += '';
-var id0 = ((t=(affix.y)) !== undefined ? t:((t = data.y) !== undefined ? t :scope.resolveLooseUp(["y"])));
+var id0 = ((t=(affix.y)) !== undefined ? t : ((t = data.y) !== undefined ? t  : scope.resolveLooseUp(["y"])));
 buffer = buffer.writeEscaped(id0);
 return buffer;
 };

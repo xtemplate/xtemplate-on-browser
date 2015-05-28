@@ -1,4 +1,3 @@
-define(function(require,exports,module){
 /*compiled by xtemplate#*/
 var ret = module.exports = function a(undefined){
 var t;
@@ -53,4 +52,3 @@ buffer = buffer.writeEscaped(id1);
 return buffer;
 };
 ret.TPL_NAME = module.id || module.name;
-});

@@ -4,8 +4,8 @@ var xtemplate = require('xtemplate');
 gulp.task('default', function () {
     gulp.src('xtpl/**/*').pipe(gulpXTemplate({
         XTemplate: xtemplate,
-        wrap: 'define',
+        wrap: false,
         truncatePrefixLen:process.cwd().length,
-        runtime: 'xtemplate/'+require('xtemplate/package.json').version+'/runtime'
+        runtime: 'xtemplate/lib/runtime'
     })).pipe(gulp.dest('build'))
 });

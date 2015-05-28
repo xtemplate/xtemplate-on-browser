@@ -1,10 +1,10 @@
-<script src="../bower_components/modulex/build/modulex-debug.js"></script>
+<script src="../node_modules/modulex/build/modulex-debug.js"></script>
 <script>
     require.config({
         packages: {
-            xtemplate: {
+            'xtemplate/4.3.0': {
                 filter: 'debug',
-                base: '../bower_components/xtemplate/build/xtemplate'
+                base: '../node_modules/xtemplate/build/'
             },
             xtpl: {
                 base: './build'

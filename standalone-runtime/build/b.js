@@ -1,6 +1,5 @@
-define(function(require,exports,module){
 /*compiled by xtemplate#*/
-var ret = module.exports = function a(undefined){
+var ret = module.exports = function b(undefined){
 var t;
 var t0;
 var t1;
@@ -43,14 +42,8 @@ var debuggerCommand = nativeCommands["debugger"];
 
 
 buffer.data += '';
-var id0 = ((t=(affix.x)) !== undefined ? t : ((t = data.x) !== undefined ? t  : scope.resolveLooseUp(["x"])));
+var id0 = ((t=(affix.y)) !== undefined ? t : ((t = data.y) !== undefined ? t  : scope.resolveLooseUp(["y"])));
 buffer = buffer.writeEscaped(id0);
-buffer.data += '';
-var callRet2
-buffer = root.includeModule(scope,{params:[require("./b")]},buffer,tpl);
-var id1 = callRet2;
-buffer = buffer.writeEscaped(id1);
 return buffer;
 };
 ret.TPL_NAME = module.id || module.name;
-});
