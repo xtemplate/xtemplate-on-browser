@@ -15,16 +15,23 @@ npm start
 ```
 ## use xtemplate with webpack and standalone runtime
 
+
 http://localhost:8000/standalone-runtime/demo.html
+
 
 ## use xtemplate with standalone mode
 
+
 http://localhost:8000/standalone/demo.html
+
 
 ## use xtemplate with requirejs loader
 
+
 http://localhost:8000/requirejs/demo.html
 
+
 ## use xtemplate with modulex loader
+
 
 http://localhost:8000/modulex/demo.html
