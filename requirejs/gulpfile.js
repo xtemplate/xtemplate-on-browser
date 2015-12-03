@@ -6,6 +6,6 @@ gulp.task('default', function () {
         XTemplate: xtemplate,
         wrap: 'define',
         truncatePrefixLen:process.cwd().length,
-        runtime: 'xtemplate/'+require('xtemplate/package.json').version+'/runtime'
+        runtime: 'xtemplate/runtime'
     })).pipe(gulp.dest('build'))
 });

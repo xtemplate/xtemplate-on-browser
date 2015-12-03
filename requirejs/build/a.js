@@ -1,7 +1,7 @@
 define(function(require,exports,module){
 /*compiled by xtemplate#*/
 var ret = module.exports = function a(undefined){
-var t;
+  var t;
 var t0;
 var t1;
 var t2;
@@ -13,16 +13,16 @@ var t7;
 var t8;
 var t9;
 var tpl = this;
-var root = tpl.root;
-var buffer = tpl.buffer;
-var scope = tpl.scope;
-var runtime = tpl.runtime;
-var name = tpl.name;
-var pos = tpl.pos;
-var data = scope.data;
-var affix = scope.affix;
-var nativeCommands = root.nativeCommands;
-var utils = root.utils;
+  var root = tpl.root;
+  var buffer = tpl.buffer;
+  var scope = tpl.scope;
+  var runtime = tpl.runtime;
+  var name = tpl.name;
+  var pos = tpl.pos;
+  var data = scope.data;
+  var affix = scope.affix;
+  var nativeCommands = root.nativeCommands;
+  var utils = root.utils;
 var callFnUtil = utils["callFn"];
 var callDataFnUtil = utils["callDataFn"];
 var callCommandUtil = utils["callCommand"];

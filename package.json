@@ -11,10 +11,10 @@
     "gulp-xtemplate": "^1.0.0",
     "koa": "~0.21.0",
     "koa-webpack-dev-test-server": "~1.0.3",
-    "modulex": "^1.7.10",
+    "modulex": "1.8.x",
     "node-libs-browser": "~0.5.2",
     "object-assign": "~2.0.0",
     "webpack": "~1.9.10",
-    "xtemplate": "4.3.0"
+    "xtemplate": "4.4.x"
   }
 }

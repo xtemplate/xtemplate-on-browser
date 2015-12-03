@@ -1,17 +1,9 @@
 <script src="//cdnjs.cloudflare.com/ajax/libs/require.js/2.1.14/require.js"></script>
 <script>
-    var originalDefine = define;
-    var define = function (name, dep, fn) {
-        if (name === 'xtemplate/4.3.0/runtime') {
-            return originalDefine(name, ['require', 'exports', 'module'], fn);
-        } else {
-            originalDefine.apply(null, arguments);
-        }
-    };
     require.config({
         paths: {
             xtpl: './build',
-            'xtemplate/4.3.0/runtime': '../node_modules/xtemplate/build/runtime-debug'
+            'xtemplate': '../node_modules/xtemplate/dist/xtemplate'
         }
     });
     require(['xtpl/a-render'], function (aRender) {

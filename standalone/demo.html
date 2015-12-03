@@ -1,6 +1,7 @@
-<script src="../node_modules/xtemplate/build/index-standalone-debug.js"></script>
+<script src="../node_modules/xtemplate/dist/xtemplate.js"></script>
 <script>
-    console.log(new XTemplate('{{x}}{{y}}').render({
+    var XTempalate = xtemplate;
+    console.log(new xtemplate('{{x}}{{y}}').render({
         x: 1,
         y: 2
     }))

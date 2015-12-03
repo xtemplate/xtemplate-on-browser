@@ -1,10 +1,10 @@
 <script src="../node_modules/modulex/build/modulex-debug.js"></script>
 <script>
+    define.amd = 1;
     require.config({
         packages: {
-            'xtemplate/4.3.0': {
-                filter: 'debug',
-                base: '../node_modules/xtemplate/build/'
+            'xtemplate': {
+                base: '../node_modules/xtemplate/dist/xtemplate'
             },
             xtpl: {
                 base: './build'

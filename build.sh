@@ -1,10 +1,10 @@
 cd requirejs
-gulp
+../node_modules/.bin/gulp
 
 cd ..
 cd modulex
-gulp
+../node_modules/.bin/gulp
 
 cd ..
 cd standalone-runtime
-gulp
+../node_modules/.bin/gulp
