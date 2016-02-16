@@ -16,5 +16,9 @@
     "object-assign": "~2.0.0",
     "webpack": "~1.9.10",
     "xtemplate": "4.4.x"
+  },
+  "dependencies": {
+    "xtemplate": "^4.5.1",
+    "xtpl-loader": "^0.1.0"
   }
 }
