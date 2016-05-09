@@ -1,1 +1,10 @@
 {{x}}{{include('./b')}}
+
+{{set (count={x:0})}}
+
+{{#each (arr)}}
+    {{#if (this>10)}}
+        {{set (count.x=count.x+1)}}
+    {{/if}}
+{{/each}}
+{{count.x}}
