@@ -1,3 +1,4 @@
+/* eslint-disable */
 define(function(require,exports,module){
 /*compiled by xtemplate#*/
 var ret = module.exports = function b(undefined){
@@ -35,6 +36,7 @@ var withCommand = nativeCommands["with"];
 var ifCommand = nativeCommands["if"];
 var setCommand = nativeCommands["set"];
 var includeCommand = nativeCommands["include"];
+var includeOnceCommand = nativeCommands["includeOnce"];
 var parseCommand = nativeCommands["parse"];
 var extendCommand = nativeCommands["extend"];
 var blockCommand = nativeCommands["block"];
@@ -47,5 +49,5 @@ var id0 = ((t=(affix.y)) !== undefined ? t : ((t = data.y) !== undefined ? t  : 
 buffer = buffer.writeEscaped(id0);
 return buffer;
 };
-ret.TPL_NAME = module.id || module.name;
+ret.TPL_NAME = "b.xtpl";
 });

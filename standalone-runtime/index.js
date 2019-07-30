@@ -1,6 +1,15 @@
-var Xtemplate = require('xtemplate/lib/runtime');
-document.getElementById('result').innerHTML = new Xtemplate(require('./xtpl/a.xtpl')).render({
-  x: 1,
-  y: 2,
-  arr: [1, 2, 3, 4, 5, 6, 7,12],
-});
+import tpl from './include/parent.xtpl';
+
+import Xtemplate from 'xtemplate-runtime';
+
+console.log(new Xtemplate(tpl).render({
+  x:1
+}));
+
+console.log('-----------------');
+
+import tpl2 from './extend/page.xtpl';
+
+console.log(new Xtemplate(tpl2).render({
+  x:2
+}));

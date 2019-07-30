@@ -1,3 +1,4 @@
+/* eslint-disable */
 define(function(require,exports,module){
 /*compiled by xtemplate#*/
 var ret = module.exports = function a(undefined){
@@ -35,6 +36,7 @@ var withCommand = nativeCommands["with"];
 var ifCommand = nativeCommands["if"];
 var setCommand = nativeCommands["set"];
 var includeCommand = nativeCommands["include"];
+var includeOnceCommand = nativeCommands["includeOnce"];
 var parseCommand = nativeCommands["parse"];
 var extendCommand = nativeCommands["extend"];
 var blockCommand = nativeCommands["block"];
@@ -47,10 +49,10 @@ var id0 = ((t=(affix.x)) !== undefined ? t : ((t = data.x) !== undefined ? t  : 
 buffer = buffer.writeEscaped(id0);
 buffer.data += '';
 var callRet2
-buffer = root.includeModule(scope,{params:[require("./b")]},buffer,tpl);
+buffer = root.includeModule(scope, {  params: [ require("./b") ] }, buffer,tpl);
 var id1 = callRet2;
 buffer = buffer.writeEscaped(id1);
 return buffer;
 };
-ret.TPL_NAME = module.id || module.name;
+ret.TPL_NAME = "a.xtpl";
 });

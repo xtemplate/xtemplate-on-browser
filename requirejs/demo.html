@@ -1,9 +1,9 @@
-<script src="//cdnjs.cloudflare.com/ajax/libs/require.js/2.1.14/require.js"></script>
+<script src="./require.js"></script>
 <script>
     require.config({
         paths: {
             xtpl: './build',
-            'xtemplate': '../node_modules/xtemplate/dist/xtemplate'
+            'xtemplate-runtime': '../node_modules/xtemplate-runtime/dist-umd/index'
         }
     });
     require(['xtpl/a-render'], function (aRender) {

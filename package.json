@@ -2,23 +2,17 @@
   "name": "xtemplate-on-browser",
   "author": "yiminghe <yiminghe@gmail.com>",
   "scripts": {
-    "start": "node --harmony server.js"
+    "start": "webpack-dev-server --config standalone-runtime/webpack.config.js"
   },
   "devDependencies": {
-    "babel-core": "~5.4.7",
-    "babel-loader": "~5.1.3",
     "gulp": "^3.8.7",
-    "gulp-xtemplate": "^1.0.0",
-    "koa": "~0.21.0",
-    "koa-webpack-dev-test-server": "~1.0.3",
-    "modulex": "1.8.x",
-    "node-libs-browser": "~0.5.2",
+    "gulp-xtemplate": "3.x",
+    "modulex": "1.8.1",
     "object-assign": "~2.0.0",
-    "webpack": "~1.9.10",
-    "xtemplate": "4.4.x"
-  },
-  "dependencies": {
-    "xtemplate": "^4.5.1",
-    "xtpl-loader": "^0.1.0"
+    "webpack": "^4.38.0",
+    "webpack-cli": "^3.3.6",
+    "webpack-dev-server": "^3.7.2",
+    "xtemplate": "5.x",
+    "xtpl-loader": "^0.3.0"
   }
 }
